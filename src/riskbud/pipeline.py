@@ -207,7 +207,9 @@ def figures(fd: Path, sims, rc, corr, W):
         eq = (1 + sims[k].ret).cumprod()
         ax.plot(tt(eq.index), (eq / eq.cummax() - 1) * 100, color=col[k], lw=1.1, label=lab[k])
     ax.set_title("Drawdown from previous peak, 2006–2026 (daily, after costs)")
-    ax.set_ylabel("Drawdown (%)"); _yaxis_years(ax); ax.legend(frameon=False, loc="lower left")
+    ax.set_ylabel("Drawdown (%)"); _yaxis_years(ax)
+    ax.set_ylim(top=2); ax.axhline(0, color="#1A1A1F", lw=0.6)
+    ax.legend(frameon=True, facecolor="white", edgecolor="#DDD9CE", framealpha=0.95, loc="lower right", fontsize=9)
     t0 = tt(sims["60/40"].index); ax.set_xlim(t0[0] - 0.2, t0[-1] + 0.2)
     fig.tight_layout(); fig.savefig(fd / "drawdowns.png", dpi=160); plt.close(fig)
 

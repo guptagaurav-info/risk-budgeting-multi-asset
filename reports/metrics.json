@@ -21,7 +21,25 @@
     "borrow_spread_bps": 50,
     "borrow_spread_stress_bps": 150,
     "split_date": "2016-01-01",
-    "allocation_usd": 1000000000
+    "allocation_usd": 1000000000,
+    "sources": {
+      "prices.parquet": {
+        "url": "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_prices.parquet",
+        "sha256": "903dbb965979f8b92a60b01524372f42be0e4bf88c291caf87171a286149be32"
+      },
+      "stock_dividend_events.parquet": {
+        "url": "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_dividend_events.parquet",
+        "sha256": "08d2a37482501c79c108dd4fefe5f1cd8d64b19ef3d3a316753597c0ddd4ece8"
+      },
+      "daily_treasury_yield.parquet": {
+        "url": "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/daily_treasury_yield.parquet",
+        "sha256": "37fca5d22b8580efc93225213d0c4f6d7ef9cf5b183cf7a427cd22b274606171"
+      },
+      "stock_split_events.parquet": {
+        "url": "https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_split_events.parquet",
+        "sha256": "3bc56dcfd86d57dcd86fc187ac6bf313e2d4ab8b346a729c910594f61c8976c3"
+      }
+    }
   },
   "portfolios": {
     "60/40": {
