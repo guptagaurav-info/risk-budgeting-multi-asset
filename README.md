@@ -52,4 +52,4 @@ Four ETFs and twenty years cover only a few macro regimes. Institutional risk pa
 - Moreira, A. and Muir, T. (2017). "Volatility-managed portfolios." *The Journal of Finance*, 72(4), 1611–1644.
 - Data mirror: defeatbeta, *yahoo-finance-data* (Hugging Face, ODC-BY).
 
-All code, analysis and charts in this repository are the author's own. MIT licence.
+Code, analysis, charts and text were produced with AI assistance (Claude, by Anthropic) and reviewed by Gaurav Gupta. MIT licence.
